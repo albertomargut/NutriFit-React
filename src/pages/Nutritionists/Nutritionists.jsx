@@ -17,16 +17,19 @@ export const Nutritionists = () => {
 
   return (
     <>
-      <h1 className="nutritionist-team">CONOCE A LOS MEJORES NUTRICIONISTAS</h1>
+      <div className="title-container">
+      <h1 className="nutritionist-team">SOBRE NUESTROS NUTRICIONISTAS</h1>
+      </div>
       <div className="nutritionist-container">
         {nutritionists && nutritionists.length > 0 ? (
           nutritionists.map((nutritionist) => (
             <div key={nutritionist.id} className="nutritionist-card">
               <div className="card-content">
                 <Avatar
-                  alt={nutritionist.user.first_name}
-                  src={`/static/images/avatar/${String(nutritionist.id)}.jpg`}
+                  alt={`${nutritionist.user.first_name} ${nutritionist.user.last_name}`}
+                  src={`/src/img/Nutricionista1.webp`} //Solo pongo una foto al no tener equipo, al tener equipo fijo cada uno tendría la suya
                   className="avatar"
+                  sx={{ width: 150, height: 150 }}
                 />
                 <div className="nutritionist-info">
                   <p className="nutritionist-name">
@@ -35,7 +38,7 @@ export const Nutritionists = () => {
                   <p className="nutritionist-style">
                     Estilo: {nutritionist.speciality}
                   </p>
-            
+
                   <p className="nutritionist-experience">
                     Años de experiencia: {nutritionist.work_experience} años.
                   </p>

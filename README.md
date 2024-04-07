@@ -67,9 +67,10 @@ Tecnologías utilizadas:
       </div>
       <br><br>
   <summary>Nutricionista 🙋🏽</summary>   
-    <li align="center">📝 Visualización Citas</li>
+    <li align="center">📝 Visualización Citas / Sobre Nutricionistas</li>
       <div align="center">
       <img src="./src/img/CitasNutricionista.png" width=180em>
+       <img src="./src/img/SobreNutricionistas.png" width=180em>
       </div>
       <br><br>
   <summary>Admin 🙋🏽</summary>   

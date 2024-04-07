@@ -1,3 +1,16 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    height: auto; /* Ajustar la altura automáticamente en dispositivos móviles */
+    padding: 20px; /* Agregar un poco de espacio alrededor del texto en dispositivos móviles */
+  }
+}
 .nutritionist-card {
     margin: 20px;
     border: 1px solid #ccc;
@@ -17,5 +30,10 @@
   
   .nutritionist-info {
     flex-grow: 1;
+  }
+  
+  .nutritionist-name {
+    font-weight: bold;
+    font-size: 1.6em;
   }
   
