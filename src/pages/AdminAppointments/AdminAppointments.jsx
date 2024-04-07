@@ -41,7 +41,7 @@ export const AdminAppointments = () => {
             <Col key={`${appointments.id}-${appointments.date}-${appointments.time}`}>
               <Card className="shadow-sm appointment-card" id="custom-card">
                 <Card.Body>
-                  <Card.Title className="text-center fs-5">Tatuador: {appointments.nutritionist.user.first_name} {appointments.nutritionist.user.last_name}</Card.Title>
+                  <Card.Title className="text-center fs-5">Nutricionista: {appointments.nutritionist.user.first_name} {appointments.nutritionist.user.last_name}</Card.Title>
                   <hr />
                   <div className="text-center">
                     <p><strong>Día:</strong> {appointments.date}</p>

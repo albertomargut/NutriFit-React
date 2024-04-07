@@ -1,19 +1,15 @@
-import {
-  getMyAppointments,
-  updateAppointment,
-  deleteAppointment,
-} from "../../services/apiCalls";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { userData } from "../userSlice";
 import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
+import { getMyAppointments, updateAppointment, deleteAppointment } from "../../services/apiCalls";
+import "./ClientAppointments.css"; // Importar archivo CSS personalizado
 
 export const ClientAppointments = () => {
   const userRdxData = useSelector(userData);
   const token = userRdxData.credentials.token;
   const myId = userRdxData.credentials.userData.client.id;
  
-
   const [myAppointments, setMyAppointments] = useState([]);
 
   useEffect(() => {
@@ -41,7 +37,6 @@ export const ClientAppointments = () => {
     const appointment = myAppointments[index];
     const { id, date, time } = appointment;
   
-
     if (!appointment || typeof appointment.id === "undefined") {
       console.error("Error: Appointment id is missing or undefined.");
       return;
@@ -49,7 +44,6 @@ export const ClientAppointments = () => {
 
     updateAppointment(token, id, { date, time })
       .then((updatedAppointment) => {
-       
         const updatedAppointments = [...myAppointments];
         updatedAppointments[index] = { ...updatedAppointment, editable: true };
         setMyAppointments(updatedAppointments);
@@ -63,7 +57,6 @@ export const ClientAppointments = () => {
   const cancelButtonHandler = (id) => {
     deleteAppointment(token, id)
       .then(() => {
-        // Eliminar la cita del estado local
         const updatedAppointments = myAppointments.filter(
           (appointment) => appointment.id !== id
         );
@@ -81,10 +74,10 @@ export const ClientAppointments = () => {
         {myAppointments && myAppointments.length > 0 ? (
           myAppointments.map((appointment, index) => (
             <Col key={index}>
-              <Card className="shadow-sm appointment-card" id="custom-card">
+              <Card className="appointment-card">
                 <Card.Body>
                   <Card.Title className="text-center fs-5">
-                    Tatuador:{" "}
+                    Nutricionista:{" "}
                     {appointment.nutritionist && appointment.nutritionist.user
                       ? `${appointment.nutritionist.user.first_name} ${appointment.nutritionist.user.last_name}`
                       : "N/A"}
@@ -141,6 +134,7 @@ export const ClientAppointments = () => {
                   <Button
                     variant="danger"
                     onClick={() => cancelButtonHandler(appointment.id)}
+                    className="cancel-btn"
                   >
                     Cancelar cita
                   </Button>

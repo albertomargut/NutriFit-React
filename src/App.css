@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url(../src/img/logo\ fondo.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url(../src/img/fondo.avif);
+  background-repeat: repeat-y;
   background-size: cover;
+  
 }

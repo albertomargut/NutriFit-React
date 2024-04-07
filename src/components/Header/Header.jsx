@@ -33,6 +33,8 @@ export const Header = () => {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="nutritionists">Nutricionistas</Nav.Link>
+            </Nav>
+            <Nav className="ml-auto"> 
             <NavDropdown title="Mi cuenta" id="basic-nav-dropdown">
               {!token ? (
                 <>

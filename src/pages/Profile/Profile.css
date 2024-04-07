@@ -1,66 +1,36 @@
-.profileData {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-  }
+.modernCard {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave para la sombra */
+  margin: 6%; /* Margen exterior */
+  margin-top: 2%;
   
-  .card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-header {
-    background-color: #343a40;
-    color: #fff;
-    font-size: 1.8rem;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .card-body {
-    text-align: left;
-  }
-  
-  .card-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
+  color: rgb(10, 10, 10); /* Color de texto blanco por defecto */
+}
 
-  .card-text {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .button-edit {
-    background-color: #343a40;
-    color: #fff;
-    border: none;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-  }
-  
-  .EditingData {
-    margin-top: 30px;
-  }
-  
-  .custom-input {
-    width: 100%;
-    padding: 120px;
-    margin-bottom: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    font-size: 1.2rem;
- 
-  }
-  
-  .button-save {
-    background-color: #343a40;
-    color: #fff;
-    border: none;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-  }
-  
+.modernCard:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modernCard .card-header {
+  background-color: transparent;
+  border: none;
+  color: inherit; /* Hereda el color de texto del elemento padre */
+}
+
+.modernCard .card-body {
+  padding: 20px; /* Espaciado interno */
+}
+
+.modernCard .btn {
+  background-color: #008e15;; /* Color de fondo */
+  border-color: #343a40; /* Color del borde */
+  color: white; /* Color de texto blanco */
+}
+
+.modernCard .btn:hover {
+  background-color: #008e15;; /* Color de fondo al pasar el ratón */
+  border-color: #212529; /* Color del borde al pasar el ratón */
+  color: rgb(255, 255, 255); /* Cambia el color de texto a negro al pasar el ratón */
+}

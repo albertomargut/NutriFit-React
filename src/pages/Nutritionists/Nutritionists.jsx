@@ -18,7 +18,7 @@ export const Nutritionists = () => {
 
   return (
     <>
-      <h1 className="nutritionist-team">CONOCE A LOS MEJORES TATUADORES</h1>
+      <h1 className="nutritionist-team">CONOCE A LOS MEJORES NUTRICIONISTAS</h1>
       <div className="nutritionist-container">
         {nutritionists && nutritionists.length > 0 ? (
           nutritionists.map((nutritionist) => {
