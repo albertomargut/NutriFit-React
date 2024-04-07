@@ -1,56 +1,56 @@
 .appointment-card {
     background-color: transparent;
     border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: box-shadow 0.3s ease-in-out; /* Transición suave para la sombra */
-    margin-bottom: 20px; /* Margen inferior */
-    color: rgb(5, 5, 5); /* Color de texto blanco por defecto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease-in-out; 
+    margin-bottom: 20px;
+    color: rgb(5, 5, 5); 
   }
   
   .appointment-card:hover {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); 
   }
   
   .appointment-card .card-title {
-    color: inherit; /* Hereda el color de texto del elemento padre */
+    color: inherit; 
   }
   
   .appointment-card .card-body {
-    padding: 20px; /* Espaciado interno */
+    padding: 20px; 
   }
   
   .appointment-card .form-control {
-    background-color: rgba(0, 128, 0, 0.1); /* Fondo semi-transparente verde */
-    color: rgb(10, 10, 10); /* Color de texto blanco */
-    border-color: rgba(0, 128, 0, 0.5); /* Borde semi-transparente verde */
+    background-color: rgba(0, 128, 0, 0.1); 
+    color: rgb(10, 10, 10); 
+    border-color: rgba(0, 128, 0, 0.5); 
   }
   
   .appointment-card .form-control:focus {
-    background-color: rgba(0, 128, 0, 0.2); /* Fondo semi-transparente al enfocar */
+    background-color: rgba(0, 128, 0, 0.2); 
   }
   
   .appointment-card .btn {
-    background-color: #008e15; /* Color de fondo verde */
-    border-color: #008e15; /* Color del borde verde */
-    color: white; /* Color de texto blanco */
+    background-color: #008e15; 
+    border-color: #008e15; 
+    color: white; 
 
   }
   
   .appointment-card .cancel-btn {
-    margin-left: auto; /* Alinea el botón a la derecha */
-    background-color: rgb(251, 2, 2); /* Color de fondo rojo */
-    border-color: red; /* Color del borde rojo */
-    color: white; /* Color del texto blanco */
+    margin-left: auto; 
+    background-color: rgb(251, 2, 2);
+    border-color: red; 
+    color: white; 
     margin-left: 4%;
   }
   
   .appointment-card .cancel-btn:hover {
-    background-color: darkred; /* Color de fondo rojo oscuro al pasar el ratón */
-    border-color: darkred; /* Color del borde rojo oscuro al pasar el ratón */
+    background-color: darkred; 
+    border-color: darkred; 
   }
   
   .appointment-card .btn:hover {
-    background-color: #849687; /* Color de fondo al pasar el ratón */
-    border-color: #849687; /* Color del borde al pasar el ratón */
+    background-color: #849687; 
+    border-color: #849687; 
   }
   

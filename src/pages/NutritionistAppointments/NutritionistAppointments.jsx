@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { userData } from "../userSlice";
-import { getNutritionistsAppointments, deleteAppointment } from "../../services/apiCalls";
+import {
+  getNutritionistsAppointments,
+  deleteAppointment,
+} from "../../services/apiCalls";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import "./NutritionistAppointments.css";
 
 export const NutritionistAppointments = () => {
   const [nutritionistAppointments, setNutritionistAppointments] = useState([]);
@@ -12,19 +16,24 @@ export const NutritionistAppointments = () => {
 
   useEffect(() => {
     if (nutritionistAppointments.length === 0) {
-      getNutritionistsAppointments(token, id).then((nutritionistAppointments) => {
-      
-        setNutritionistAppointments(nutritionistAppointments);
-      });
+      getNutritionistsAppointments(token, id).then(
+        (nutritionistAppointments) => {
+          setNutritionistAppointments(nutritionistAppointments);
+        }
+      );
     }
-  }, [token, id]); 
+  }, [token, id]);
 
-  const removeButtonHandler = (id) => { 
+  const removeButtonHandler = (id) => {
     deleteAppointment(token, id).then(() => {
-      setNutritionistAppointments(nutritionistAppointments.filter((appointments) => appointments.id !== id));
-      
+      setNutritionistAppointments(
+        nutritionistAppointments.filter(
+          (appointments) => appointments.id !== id
+        )
+      );
     });
-  }
+  };
+
   return (
     <Container>
       <h1 className="text-center mt-5 mb-4">Mis citas</h1>
@@ -32,7 +41,7 @@ export const NutritionistAppointments = () => {
         {nutritionistAppointments && nutritionistAppointments.length > 0 ? (
           nutritionistAppointments.map((appointment) => (
             <Col key={appointment.id}>
-              <Card className="shadow-sm appointment-card" id="custom-card">
+              <Card className="shadow-sm appointment-card transparent-card">
                 <Card.Body>
                   <Card.Title className="text-center fs-5">
                     {appointment.client.user.first_name}{" "}
@@ -51,13 +60,16 @@ export const NutritionistAppointments = () => {
                       {appointment.client.user.phone_number}
                     </p>
                   </div>
-                  <Button
-                    variant="danger"
-                    size="sm"
-                    onClick={() => removeButtonHandler(appointment.id)}
-                  >
-                    Borrar cita
-                  </Button>
+                  <div className="btn-container">
+                    {" "}
+                    <Button
+                      variant="danger"
+                      size="sm"
+                      onClick={() => removeButtonHandler(appointment.id)}
+                    >
+                      Borrar cita
+                    </Button>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
@@ -71,4 +83,3 @@ export const NutritionistAppointments = () => {
     </Container>
   );
 };
-

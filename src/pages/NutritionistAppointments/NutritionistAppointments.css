@@ -1,0 +1,29 @@
+.appointment-card {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease-in-out; 
+  margin: 20px; 
+  color: white; 
+}
+
+.appointment-card:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.appointment-card .card-header {
+  background-color: transparent;
+  border: none;
+  color: inherit; 
+}
+
+.appointment-card .card-body {
+  padding: 20px; 
+}
+
+.appointment-card .btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+

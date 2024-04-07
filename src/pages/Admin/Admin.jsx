@@ -31,8 +31,8 @@ export const Admin = () => {
       <div className="row">
         {users && users.length > 0 ? (
           users.map((user) => (
-            <div className="col-md-4 mb-3" id="user-card" key={user.id}>
-              <Card className="shadow-sm appointment-card" id="custom-card">
+            <div className="col-md-4 mb-3" key={user.id}>
+              <Card className="shadow-sm user-card" id="custom-card">
                 <Card.Body>
                   <Card.Title>{`${user.first_name} ${user.last_name}`}</Card.Title>
                   <Card.Text>Email: {user.email}</Card.Text>

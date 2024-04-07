@@ -1,12 +1,12 @@
 .modernCard {
   background-color: transparent;
   border: none;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: box-shadow 0.3s ease-in-out; /* Transición suave para la sombra */
-  margin: 6%; /* Margen exterior */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; 
+  margin: 6%;
   margin-top: 2%;
   
-  color: rgb(10, 10, 10); /* Color de texto blanco por defecto */
+  color: rgb(10, 10, 10);
 }
 
 .modernCard:hover {
@@ -16,21 +16,21 @@
 .modernCard .card-header {
   background-color: transparent;
   border: none;
-  color: inherit; /* Hereda el color de texto del elemento padre */
+  color: inherit; 
 }
 
 .modernCard .card-body {
-  padding: 20px; /* Espaciado interno */
+  padding: 20px; 
 }
 
 .modernCard .btn {
-  background-color: #008e15;; /* Color de fondo */
-  border-color: #343a40; /* Color del borde */
-  color: white; /* Color de texto blanco */
+  background-color: #008e15;
+  border-color: #343a40; 
+  color: white; 
 }
 
 .modernCard .btn:hover {
-  background-color: #008e15;; /* Color de fondo al pasar el ratón */
-  border-color: #212529; /* Color del borde al pasar el ratón */
-  color: rgb(255, 255, 255); /* Cambia el color de texto a negro al pasar el ratón */
+  background-color: #008e15;
+  border-color: #212529;
+  color: rgb(255, 255, 255); 
 }

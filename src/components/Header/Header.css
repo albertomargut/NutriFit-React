@@ -1,51 +1,51 @@
 .navbar {
-    background-color: transparent; /* Establece el fondo transparente */
-    border-bottom: none; /* Elimina el borde inferior */
-    box-shadow: none; /* Elimina la sombra */
+    background-color: transparent; 
+    border-bottom: none;
+    box-shadow: none; 
   }
   
   .navbar-nav .nav-link {
-    color:#050505; /* Color del texto */
+    color:#050505;
     font-size: 1.3rem;
     text-align: center;
   }
  
   
   .navbar-nav .nav-link:hover {
-    color: #008e15; /* Color del texto al pasar el mouse */
+    color: #008e15; 
   }
   
   .navbar-brand {
-    color: #008e15; /* Color del texto del logotipo */
-    font-weight: bold; /* Texto en negrita */
+    color: #008e15; 
+    font-weight: bold; 
     font-size: 1.8rem;
   }
   
   .navbar-toggler-icon {
-    background-color: #bfd1c1; /* Color del ícono del botón de alternar */
+    background-color: #bfd1c1; 
   }
   
   .navbar-toggler {
-    border: none; /* Elimina el borde del botón de alternar */
+    border: none; 
   }
   
   .nav-link.disabled {
-    color: rgba(97, 97, 97, 0.5); /* Color del texto de los enlaces deshabilitados */
+    color: rgba(97, 97, 97, 0.5); 
   }
   
   .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo del menú desplegable */
+    background-color: rgba(255, 255, 255, 0.9);
   }
   
   .dropdown-divider {
-    background-color: #fff; /* Color de la línea divisoria del menú desplegable */
+    background-color: #fff;
   }
   
   .dropdown-item {
-    color: #000; /* Color del texto de los elementos del menú desplegable */
+    color: #000;
   }
   
   .dropdown-item:hover {
-    background-color: #008e15; /* Color de fondo al pasar el mouse sobre los elementos del menú desplegable */
+    background-color: #008e15;
   }
   

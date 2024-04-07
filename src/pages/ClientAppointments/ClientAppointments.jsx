@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { userData } from "../userSlice";
 import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import { getMyAppointments, updateAppointment, deleteAppointment } from "../../services/apiCalls";
-import "./ClientAppointments.css"; // Importar archivo CSS personalizado
+import "./ClientAppointments.css";
 
 export const ClientAppointments = () => {
   const userRdxData = useSelector(userData);
