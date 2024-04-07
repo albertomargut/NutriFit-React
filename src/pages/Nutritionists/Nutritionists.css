@@ -1,0 +1,91 @@
+.nutritionist-team {
+    text-align: center;
+    color: black;
+}
+
+.nutritionist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.nutritionist-card {
+
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 375px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #000;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    position: relative;
+
+}
+
+.nutritionist-card:hover {
+    transition-duration: 1.25s;
+    box-shadow: 0 0 100px 12px grey;
+    cursor: crosshair;
+    z-index: 10;
+  }
+  
+
+.nutritionist-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nutritionist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-top: 2em;
+    
+}
+
+.avatar {
+    width: 13vw; 
+    height: 10vh;
+    display: flex;
+    font-size: 3rem;
+    background-color: rgb(192, 190, 187);
+    
+    
+}
+
+.nutritionist-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.nutritionist-style {
+    font-size: 16px;
+
+
+}
+
+.nutritionist-experience {
+    font-size: 16px;
+
+}
+
+.nutritionist-phone {
+    font-size: 16px;
+
+}
+
+.error-nutritionist {
+    text-align: center;
+}

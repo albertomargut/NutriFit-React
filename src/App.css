@@ -1,0 +1,12 @@
+#root {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background-image: url(../src/img/logo\ fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
