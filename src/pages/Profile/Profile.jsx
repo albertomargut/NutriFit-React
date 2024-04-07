@@ -81,8 +81,8 @@ export const Profile = () => {
           {profileData.last_name ? (
             <Card.Text>Apellido: {profileData.last_name}</Card.Text>
           ) : null}
-          {profileData.tattoo_style ? (
-            <Card.Text>Estilo: {profileData.tattoo_style}</Card.Text>
+          {profileData.speciality ? (
+            <Card.Text>Especialidad: {profileData.speciality}</Card.Text>
           ) : null}
           <Card.Text>Email: {profileData.email}</Card.Text>
           <Card.Text>Teléfono: {profileData.phone_number}</Card.Text>
