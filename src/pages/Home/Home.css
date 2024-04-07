@@ -28,23 +28,21 @@ body, html {
 
 .Bloque1,
 .Bloque2 {
-  width: 55%;
+  width: 85%;
   margin: 20px;
-  background-color: #fff;
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.Imagen1,
-.Imagen2 {
-  max-width: 85%;
+.Imagen1 {
+  width: 25vh;
   border-radius: 8px;
 }
 
-.Mensaje1,
-.Mensaje2 {
-  margin-top: 20px;
+.Mensaje1{
+  margin-top: 2px;
   font-size: 1.2em;
   color: #6c757d;
   line-height: 1.5;
